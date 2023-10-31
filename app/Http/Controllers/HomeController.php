@@ -10,10 +10,8 @@ class HomeController extends Controller
 {
     public function showDataTable(){
 
-        $car = Owner::find(1)->car;
-
-        dd($car);
-
-        return view('home.index');
+        $owners = Owner::all();
+        $data = compact('owners');
+        return view('home.index')->with($data);
     }
 }

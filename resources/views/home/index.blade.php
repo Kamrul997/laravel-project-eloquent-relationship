@@ -16,11 +16,12 @@
     </tr>
   </thead>
   <tbody>
-    
+    @foreach ($owners as $owner)
       <tr>
-        <td></td>
-        <td></td>
+        <td>{{$owner->name}}</td>
+        <td>{{$owner->car->name}}</td>
       </tr>
+    @endforeach
     
   </tbody>
 </table>

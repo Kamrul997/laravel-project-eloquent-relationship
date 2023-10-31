@@ -10,6 +10,6 @@ class Car extends Model
     use HasFactory;
 
     public function owner(){
-        return $this->belongsTo(Car::class);
+        return $this->belongsTo(Owner::class);
     }
 }
