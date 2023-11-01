@@ -30,7 +30,7 @@
   </tbody>
 </table>
 
-<div class="row mt-3">
+{{-- <div class="row mt-3">
   @foreach ($posts as $post)
     <div class="card m-2" style="width: 18rem;">
       <div class="card-body">
@@ -39,11 +39,11 @@
         <h6 class="card-title">Comments:</h6>
         <div>
           <ul class="list-group list-group-flush">
-            @foreach ($post->comments as $comment)
+            @foreach ($post as $comment)
               <div class="">
                 <div class="card-body">
-                  <h6 class="font-weight-bold">{{$comment->commentator_name}}</h6>
-                  <small class="text">{{ $comment->comment }}</small>
+                  <h6 class="font-weight-bold"></h6>
+                  <small class="text"></small>
                 </div>
               </div>
             @endforeach
@@ -52,7 +52,7 @@
       </div>
     </div>
   @endforeach
-</div>
+</div> --}}
 
 
 @endsection
